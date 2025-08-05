@@ -183,3 +183,6 @@ class OverdampedLangevin:
             history[i, :, :] = self.old_particles.detach().clone()
 
         return history, best_particle, min_val, best_iteration
+
+
+#need to run testing for this to make sure that it works for a test sin curve fitting using B -splines
